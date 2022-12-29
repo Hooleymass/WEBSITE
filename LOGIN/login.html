@@ -31,6 +31,14 @@
                     <label class="form-label" for="typePasswordX">Password</label>
                  </div>
 
+                 <!-- Checkbox to toggle password visibility -->
+                 <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="showPasswordCheckbox">
+                     <label class="form-check-label" for="showPasswordCheckbox">
+                       Show password
+                     </label>
+                 </div>
+
                  <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
 
                  <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
@@ -54,5 +62,18 @@
     </div>
   </div>
 </section>
+<script>
+  // Select the password input and checkbox
+  const passwordInput = document.querySelector('#typePasswordX');
+  const showPasswordCheckbox = document.querySelector('#showPasswordCheckbox');
+
+  // Add a change event listener to the checkbox
+  showPasswordCheckbox.addEventListener('change', function() {
+    // If the checkbox is checked, set the password input type to "text"
+    // Otherwise, set it to "password"
+    passwordInput.type = this.checked ? 'text' : 'password';
+  });
+</script>
+
 </body>
 </html>
