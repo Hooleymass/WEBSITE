@@ -1,66 +1,10 @@
-.modal-body {
-  /* Add a gradient background */
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+.gradient-custom {
+/* fallback for old browsers */
+background: #6a11cb;
 
-  /* Add some padding and a white text color */
-  padding: 2rem;
-  color: white;
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
 
-  /* Add some rounded corners */
-  border-radius: 1rem;
-}
-
-/* Style the form inputs */
-.form-outline {
-  /* Add a white background color and some padding */
-  background-color: white;
-  padding: 0.75rem 1rem;
-
-  /* Add some rounded corners */
-  border-radius: 1rem;
-
-  /* Add some box shadow */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-/* Style the form labels */
-.form-label {
-  /* Add a white text color */
-  color: white;
-
-  /* Make the label float above the input when the input has a value */
-  transform: translateY(-150%);
-  transition: all 0.2s ease-in-out;
-}
-
-.form-outline input:focus + .form-label,
-.form-outline input:not(:placeholder-shown) + .form-label {
-  /* Move the label back down and make it smaller when the input is focused or has a value */
-  transform: translateY(0) scale(0.75);
-}
-
-/* Style the form checkbox */
-.form-check {
-  /* Add some white text color */
-  color: white;
-
-  /* Add some margin */
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-
-/* Style the submit button */
-button[type="submit"] {
-  /* Add a gradient background */
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-
-  /* Add some padding and a white text color */
-  padding: 0.75rem 1.5rem;
-  color: white;
-
-  /* Add some rounded corners */
-  border-radius: 1rem;
-
-  /* Add some box shadow */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
