@@ -84,5 +84,17 @@
     </div>
   </section>
   <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <script>
+  // Select the password input and checkbox
+  const passwordInput = document.querySelector('#typePasswordX');
+  const showPasswordCheckbox = document.querySelector('#showPasswordCheckbox');
+
+  // Add a change event listener to the checkbox
+  showPasswordCheckbox.addEventListener('change', function() {
+    // If the checkbox is checked, set the password input type to "text"
+    // Otherwise, set it to "password"
+    passwordInput.type = this.checked ? 'text' : 'password';
+  });
+  </script>
 </body>
 </html>
